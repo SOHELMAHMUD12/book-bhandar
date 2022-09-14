@@ -92,6 +92,7 @@ const bookList = [
     div.classList.add("card");
   
     let overview = book.overview;
+    const shortOverview = overview.substring(0, 60) + ".....";
   
     div.innerHTML = `
     <div class="image-container">
@@ -107,7 +108,7 @@ const bookList = [
     <div class="info-container">
       <h1>${book.name}</h1>
       <p>
-        ${overview}
+        ${shortOverview}
       </p>
     </div>
   `;
